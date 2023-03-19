@@ -78,7 +78,6 @@ USER nobody
 # Start shadowsocks-libev server
 CMD exec ss-server \
     -s 0.0.0.0 \
-    -s ::0 \
     -p $SERVER_PORT \
     -k $PASSWORD \
     -m $METHOD \
