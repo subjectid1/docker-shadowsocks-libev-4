@@ -74,7 +74,7 @@ EXPOSE $SERVER_PORT/tcp $SERVER_PORT/udp
 
 # Run as nobody
  
-
+USER root
 # Start shadowsocks-libev server
 CMD exec ss-server \
     -s 0.0.0.0 \
